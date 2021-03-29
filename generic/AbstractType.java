@@ -6,4 +6,9 @@ public abstract class AbstractType<T extends Number> implements TypeWrapper<T> {
     public T getValue() {
         return value;
     }
+
+    @Override
+    public String toString() {
+        return String.valueOf(value);
+    }
 }
